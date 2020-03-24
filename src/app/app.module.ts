@@ -16,7 +16,6 @@ import { ErrorInterceptor } from './helpers/error.interceptor';
 import { fakeBackendProvider } from './helpers/fake-backend';
 import { AppRoutingModule } from './app-routing.module';
 
-// used to create fake backend
 
 @NgModule({
     imports: [
@@ -40,7 +39,6 @@ import { AppRoutingModule } from './app-routing.module';
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
-        // provider used to create fake backend
         fakeBackendProvider
     ],
     bootstrap: [AppComponent]
