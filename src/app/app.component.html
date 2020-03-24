@@ -1,20 +1,20 @@
-<nav>
-  
-  <div [ngClass]="{ 'show': navbarOpen }">
-    <ul>
-      <li>
-        <a routerLink="" routerLinkActive="">Home</a>
-      </li>
-      <li>
-        <a routerLink="login" routerLinkActive="active">login</a>
-      </li>
-      <li>
-        <a routerLink="register" routerLinkActive="active">Register</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div class="topnav">
+  <a class="active" routerLink="">Home</a>
+  <a routerLink="login">Login</a>
+  <a routerLink="register">Register</a>
+</div>
 
-<div>
-  <router-outlet></router-outlet>
+
+
+
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
 </div>

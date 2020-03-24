@@ -4,6 +4,7 @@ import { map } from 'rxjs/operators';
 
 @Injectable()
 export class AuthenticationService {
+    currentUser: any;
     constructor(private http: HttpClient) { }
 
     login(username: string, password: string) {

@@ -5,7 +5,7 @@
   "projects": {
     "loginapp": {
       "projectType": "application",
-      "schematics": {
+      "schematics": { 
         "@schematics/angular:component": {
           "style": "scss"
         }
@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
