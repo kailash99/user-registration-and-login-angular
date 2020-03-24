@@ -15,7 +15,6 @@
       "prefix": "app",
       "architect": {
         "build": {
-          " _redirects": "src/index.html"
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/loginapp",
