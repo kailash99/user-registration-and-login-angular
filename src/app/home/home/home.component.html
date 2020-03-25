@@ -1,10 +1,10 @@
 <h1>Hi {{currentUser.firstName}}!</h1>
-<p>You're logged in with Angular 6!!</p>
-<h3>All registered users:</h3>
+<p>You're logged in.</p>
+<h3>Welcome {{user.firstName}}</h3>
 <ul>
     <li *ngFor="let user of users">
-        {{user.username}} (<p>Name{{user.firstName}}</p> {{user.lastName}} <p>Date of Birth {{user.birthDate}}</p><p>Email {{user.email}}</p>)
-        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+        <h2>Username : {{user.username}}</h2> <p>Name : {{user.firstName}} {{user.lastName}}</p> <p>Date of Birth : {{user.birthDate}}</p><p>Email : {{user.email}}</p>
+        - <a (click)="deleteUser(user.id)" class="text-danger"><b>Delete</b></a>
     </li>
 </ul>
 <p><a [routerLink]="['/login']">Logout</a></p>
